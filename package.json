@@ -1,0 +1,17 @@
+{
+  "name": "node-generator",
+  "version": "1.0.0",
+  "description": "A node generator",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex Banks",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.13.3",
+    "pg": "^4.4.3",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^3.13.0"
+  }
+}
