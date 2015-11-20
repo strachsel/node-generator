@@ -38,7 +38,6 @@ function putBird(req, res) {
 }
 
 function deleteBird(req, res) {
-  console.log('Goo2');
   var name = req.params.name;
 
   res.send(BirdModel.deleteBird(name));
