@@ -1,8 +1,8 @@
 'use strict';
-var express = require('express');
-var app 	= express();
-var port  	= process.env.PORT || 3000;
-var bodyParser = require('body-parser');
+var express     = require('express');
+var app 	      = express();
+var config      = require('./config');
+var bodyParser  = require('body-parser');
 
 
 
@@ -22,6 +22,6 @@ app.use(bodyParser());
 app.listen(port, function() {
     //Attach the routes to the listener
     app.use('/', routes);
-    console.log('Listening on Port', port);
+    console.log('Listening on Port', config.port);
 
 });
