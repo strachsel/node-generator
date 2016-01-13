@@ -14,7 +14,7 @@ things it needs to operate.  The model(s) only need to know about the DAL, the D
 2. It's super important to require based on the object hierarchy. As in, do not require a specific model file. Require the
 object exported in the /models/index.js file. Same with Controllers. Same with Middleware. Things stay neat and tidy and
 enjoyable if you require the parent object and not the children.
-3. This is super simple. In an "advanced" example I'd proabbly include a services layer, rather than having the controllers
+3. This is super simple. In an "advanced" example I'd probably include a services layer, rather than having the controllers
 talk directly to the models. If that happened, obviously, the flow would turn into:
 ```
 app.js > routes.js > controllers > services > models > dal.js
